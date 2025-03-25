@@ -1,0 +1,51 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+  - Class: rviz/ToolProperties
+    Name: Tool Properties
+
+Visualization:
+  Global Options:
+    Fixed Frame: map
+    Use Global Time: false
+
+Displays:
+  - Class: rviz/TF
+    Name: TF
+    Enabled: true
+    Topic: /tf
+    Color: 0.0 0.0 1.0 1.0
+    Line Width: 0.02
+    Alpha: 1.0
+    History Length: 0.0
+    Show Axes: true
+    Show Text: true
+    Text Height: 0.2
+  - Class: rviz/RobotModel
+    Name: RobotModel
+    Enabled: true
+    Robot Description: robot_description
+    Update Rate: 0
+    Alpha: 1.0
+    Use Attached Sensor: true
+  - Class: rviz/TFTree
+    Name: TFTree
+    Enabled: true
+
+Tools:
+  - Class: rviz/Select
+    Name: Select
+  - Class: rviz/Interact
+    Name: Interact
+
+Views:
+  - Class: rviz/Orbit
+    Name: TopDown
+    Target Frame: map
+    Distance: 10.0
+    Elevation: 0.5
+    Azimuth: 0.0
+    Focal Point: 0 0 0
+
